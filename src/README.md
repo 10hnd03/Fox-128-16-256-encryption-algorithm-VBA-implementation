@@ -38,16 +38,16 @@ The application is modularly organized, separating the graphical user interface 
 
 ### ⚙️ Source Modules (Code)
 * **1 Public Module:**
-  * **`Funkcije`:** Houses the globally accessible wrapper functions for encryption/decryption, high-level orchestration, and validation workflows.
+  * **`Funkcije`:** Houses the globally accessible functions and vector values.
 * **2 Private Modules:**
-  * **`Fox`:** Implements the core mathematical layout of the Fox 128/16/256 cipher (the strict constant-time round transformations, bitwise masks, and linear arithmetic).
+  * **`Fox`:** Implements the core mathematical layout of the Fox 128/16/256 cipher (the strict constant-time code logic ( as much as possible ) for round transformations, bitwise masks, and linear arithmetic).
   * **`ObradaTeksta`:** Manages memory pointers, handles character/byte page translations (`HR-ENG`), and wraps the Windows Kernel API (`RtlMoveMemory`) for safe boundary operations.
 
-*Note: Raw code exports (`.bas`, `.cls`, `.txt`) are available in the root directory for immediate reading, while the full demo database is located in the `/src` folder.*
+*Note: Raw code exports (`.bas`, `.cls``) are available in the root directory for immediate reading, while the full demo database is located in the `/src` folder.*
 
 ## 👤 About the Author & Motivation
 
-This project is entirely a **passion project** driven by personal curiosity and engineering interest. I am not a professional mathematician or a software engineer by trade, but rather a self-taught technology enthusiast. 
+This project is entirely a passion driven by personal curiosity and engineering interest. I am not a professional mathematician or a software engineer by trade, but rather a self-taught technology enthusiast. 
 
 Developing this cipher was a personal milestone in exploring low-level computing concepts, pointer arithmetic, and strict optimization constraints inside an unexpected environment like Microsoft Access. 
 
@@ -57,7 +57,7 @@ This project is a *clean-room implementation* created solely for educational pur
 
 * **Original Authors:** **Prof. Serge Vaudenay** and **Dr. Pascal Junod** (developed at **EPFL - École Polytechnique Fédérale de Lausanne**).
 * **Reference Specifications:** Based entirely on the publicly available academic document **"FOX Specifications Version 1.2"**.
-* **Historical context:** [Wikipedia - IDEA NXT](https://wikipedia.org)
+* **Historical context:** [Wikipedia - IDEA NXT](https://en.wikipedia.org/wiki/IDEA_NXT)
 
 *Legal Note: Inquiries regarding publication permissions were sent to the original authors; however, no response has been received to date. This repository contains completely original source code implementing public mathematical specifications and is not affiliated with, nor endorsed by, the original authors, EPFL, or the original patent holders.*
 
